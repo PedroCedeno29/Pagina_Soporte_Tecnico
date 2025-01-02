@@ -1,0 +1,259 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Soluciones TechLab</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #8cc1eb;
+            color: #FFFFFF;
+        }
+
+       
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #005FA8; 
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 0 15px;
+            text-transform: uppercase;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 700px; 
+            overflow: hidden;
+            background-color: #8cc1eb; 
+        }
+
+        .hero video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%; 
+            height: 100%; 
+            object-fit: fill; 
+        }
+
+        .hero-content {
+            position: absolute;
+            top: 75%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            z-index: 10;
+        }
+
+        .hero-content img {
+            max-width: 150px;
+            margin-bottom: 20px;
+        }
+
+        .hero-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .hero-content .buttons a {
+            background-color: #e9e519;
+            color: #000305;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            margin: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        .hero-content .buttons a:hover {
+            transform: scale(1.1);
+        }
+
+        #informativa {
+            background-color: #FFFFFF;
+            color: #333;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        #informativa h2 {
+            font-size: 2.5rem;
+            color: #005FA8;
+            margin-bottom: 20px;
+        }
+
+        .informativa-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .informativa-item {
+            text-align: center;
+            max-width: 300px;
+        }
+
+        .informativa-item img {
+            max-width: 100px;
+            margin-bottom: 10px;
+        }
+
+        .informativa-item h3 {
+            color: #005FA8;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .informativa-item p {
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        .informativa-item a {
+            color: #005FA8;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        /* Sección Conócenos */
+        #conocenos {
+            background: url('imagenes/principal/wallpaper.png') no-repeat center center;
+            background-size: cover;
+            padding: 50px 20px;
+            color: #fff;
+            text-align: center;
+        }
+
+        .tecnicos {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .tecnico {
+            text-align: center;
+            margin: 20px;
+            max-width: 200px;
+        }
+
+        .tecnico img {
+            max-width: 100%;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .tecnico h3 {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+        .tecnico p {
+            font-size: 0.9rem;
+        }
+
+        .social-link:hover {
+            opacity: 0.8;
+        }
+
+        .social-logo {
+            width: 25px; 
+            height: 25px;
+            margin-right: 8px; 
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <div><a href="#inicio">Soluciones TechLab</a></div>
+        <div>
+            <a href="#informativa">Servicios</a>
+            <a href="#conocenos">Conócenos</a>
+            <a href="https://www.instagram.com/solutionstechlab/" target="_blank" class="social-link">
+                <img src="imagenes/logoinstagram.png" alt="Instagram" class="social-logo">
+            </a>
+        </div>
+    </div>
+
+    <div class="hero">
+        <video autoplay muted loop>
+            <source src="imagenes/principal/soporte.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de videos.
+        </video>
+        <div class="hero-content">
+            <div class="buttons">
+                <a href="paginalogins.html">Iniciar Sesión</a>
+                <a href="nuevacuenta.php">Registrarse</a>
+            </div>
+        </div>
+    </div>
+
+    <section id="informativa">
+        <h2>Servicios</h2>
+        <div class="informativa-container">
+            <div class="informativa-item">
+                <img src="imagenes/sliders/calidad.png" alt="Gratis para todos">
+                <h3>Calidad garantizada</h3>
+                <p>No tendrás que preocuparte de volver a tener los mismos problemas con tus dispositivos en un largo tiempo.</p>
+            </div>
+            <div class="informativa-item">
+                <img src="imagenes/sliders/rapidez.png" alt="Aprender con la práctica">
+                <h3>Atención rápida y eficaz</h3>
+                <p>Nos enfocamos en darle soporte y mantenimiento a tus dispositivos de forma instantánea.</p>
+            </div>
+            <div class="informativa-item">
+                <img src="imagenes/sliders/confianza.png" alt="Seguridad">
+                <h3>Seguridad garantizada</h3>
+                <p>Nos ganaremos tu confianza al solucionar tus problemas técnicos de forma segura.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="conocenos">
+        <h2>Conócenos</h2>
+        <div class="tecnicos">
+            <div class="tecnico">
+                <img src="imagenes/tecnicos/foto_1.jpeg" alt="Técnico 1">
+                <h3>Alejandro Quevedo</h3>
+                <p>Especialista en hardware y mantenimiento preventivo.</p>
+            </div>
+            <div class="tecnico">
+                <img src="imagenes/adminpedro.jpeg" alt="Técnico 2">
+                <h3>Pedro Cedeño</h3>
+                <p>Ingeniero en software, desarrollador de soluciones técnicas.</p>
+            </div>
+            <div class="tecnico">
+                <img src="imagenes/tecnicos/Foto_Guillermo.jpg" alt="Técnico 3">
+                <h3>Guillermo Velasco</h3>
+                <p>Especialista en software y soporte técnico.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

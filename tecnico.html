@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empleado - Iniciar Sesión</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Inicie su sesión como técnico</h1>
+        <form action="logintecnico.php" method="POST">
+            <label for="usuario">Usuario:</label><br>
+            <input type="text" id="usuario" name="usuario" placeholder="Ingrese su usuario" required><br><br>
+
+            <label for="contraseña">Contraseña:</label><br>
+            <input type="password" id="contraseña" name="contraseña" placeholder="Ingrese su contraseña" required><br><br>
+
+            <input type="submit" value="Iniciar Sesión">
+        </form>
+        <hr class="separator">
+        <a href="paginalogins.html" class="link-volver">Regresar</a>
+    </div>
+</body>
+</html>

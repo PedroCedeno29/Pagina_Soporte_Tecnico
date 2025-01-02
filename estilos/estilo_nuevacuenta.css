@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 1.8rem;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.container input[type="text"],
+.container input[type="email"],
+.container input[type="tel"],
+.container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333333;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.container input[type="text"]:focus,
+.container input[type="email"]:focus,
+.container input[type="tel"]:focus,
+.container input[type="password"]:focus {
+    border-color: #007bff;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+}
+
+
+.container button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.container button:hover {
+    background-color: #0056b3;
+}
+
+.container a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.container a:hover {
+    color: #0056b3;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+
+    .container h1 {
+        font-size: 1.5rem;
+    }
+}
